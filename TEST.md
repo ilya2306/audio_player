@@ -1,4 +1,4 @@
-# CONFIGURE BUILDER
+# CONFIGURE BUILDER<a name="top"></a>
 
 [DOCS](https://www.electron.build/configuration/configuration)
 
@@ -228,3 +228,6 @@ Valid values are listed
 in [Apple's documentation](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/LaunchServicesKeys.html#//apple_ref/doc/uid/TP40009250-SW8)
 
 #### target
+
+
+[<kbd>&uarr; To top &uarr;</kbd>](#top)
