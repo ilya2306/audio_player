@@ -20,12 +20,12 @@
   - [output](#directoriesoutput)
 - [afterSign](#aftersign)
 - [publish](#publish)
-  - [provider](#provider)
-  - [url](#url)
-  - [channel](#channel)
+  - [provider](#publishprovider)
+  - [url](#publishurl)
+  - [channel](#publishchannel)
   - [publishAutoUpdate](#publishautoupdate)
   - [publisherName](#publishername)
-  - [example](#example)
+  - [example](#publishexample)
 - [generateUpdatesFilesForAllChannels](#generateupdatesfilesforallchannels)
 - [mac](#mac)
   - [category](#category)
@@ -147,20 +147,20 @@ To publish on own server use *`generic`* provider
 Generic (any HTTP(S) server) options.
 In all publish options [File Macros](/file-patterns#file-macros) are supported
 
-#### provider
+#### provider<a name="publishprovider"></a>
 
 Type: `string`  
 Value: `"generic"`
 
 The provider. Must be `generic`
 
-#### url
+#### url<a name="publishurl"></a>
 
 Type: `string`
 
 The base url
 
-#### channel
+#### channel<a name="publishchannel"></a>
 
 Type: `null | string`  
 Default: `"latest"`  
@@ -168,7 +168,7 @@ Required: `false`
 
 The channel
 
-#### publishAutoUpdate
+#### publishAutoUpdate<a name="publishAutoUpdate"></a>
 
 Type: `boolean`  
 Default: `true`  
@@ -180,7 +180,7 @@ Auto update relies only on the first provider in the list (you can specify sever
 Thus, probably, there`s no need to upload the metadata files for the other configured providers. But by default will be
 uploaded
 
-#### publisherName
+#### publisherName<a name="publisherName"></a>
 
 Type: `String | Array<String> | “undefined”`  
 Required: `false`
@@ -188,7 +188,7 @@ Required: `false`
 The publisher name, exactly as in your code signed certificate. Several names can be provided. Defaults to common name
 from your code signing certificate.
 
-#### example
+#### example<a name="publishexample"></a>
 
 Minimum config to publish option
 
