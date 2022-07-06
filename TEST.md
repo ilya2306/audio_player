@@ -16,8 +16,8 @@
 - [asarUnpack](#asarunpack)
 - [directories](#directories)
   - [app](#directoriesapp)
-  - [buildResources](#buildresources)
-  - [output](#output)
+  - [buildResources](#directoriesbuildresources)
+  - [output](#directoriesoutput)
 - [afterSign](#aftersign)
 - [publish](#publish)
   - [provider](#provider)
@@ -109,7 +109,7 @@ Type: `null | string`
 
 The application directory (containing the application package.json), defaults to `app`, `www` or working directory
 
-#### buildResources
+#### buildResources<a name="directoriesbuildResources"></a>
 
 Type: `null | string`  
 Default: `build`
@@ -119,7 +119,7 @@ The path to build resources.
 Please note — build resources is not packed into the app. If you need to use some files, e.g. as tray icon, please
 include required files explicitly: `"files": ["**\/*", "build/icon.*"]`
 
-#### output
+#### output<a name="directoriesoutput"></a>
 
 Type: `null | string`  
 Default: `dist`
